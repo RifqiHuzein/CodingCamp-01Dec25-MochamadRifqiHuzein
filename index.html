@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My | Portofolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Logo_revou.png" width="50px">
+        <div class="logo">
+            <span class="logo-icon">RIFQI HUZEIN</span>
+        </div>
+        <nav class="navbar">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="profile.html" class="nav-link">Our Profile</a>
+            <a href="#" class="nav-link">Portfolio</a>
+            <a href="#message-us-section" class="nav-link">Message Us</a>
+        </nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 id="welcome-message" style="opacity: 0;">Hi, Hallo</h1>
+                <p>Have a Look at My Work.</p>
+                
+                <div class="cta-buttons">
+                    <a href="profile.html" class="btn btn-primary">Our Profile →</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="device-mockup">
+                    <div class="phone-1"></div>
+                    <div class="phone-2"></div>
+                </div>
+            </div>
+        </section>
+        
+        <hr class="section-divider">
+
+        <section class="headquarter-section">
+            <h2>My Works</h2>
+            <div class="headquarter-list">
+                <div class="hq-item">
+                    <div class="hq-circle"></div>
+                    <span>Welcome</span>
+                </div>
+                <div class="hq-item">
+                    <div class="hq-circle"></div>
+                    <span>To My</span>
+                </div>
+                <div class="hq-item">
+                    <div class="hq-circle"></div>
+                    <span>Portofolio</span>
+                </div>
+            </div>
+        </section>
+        
+        <hr class="section-divider">
+
+        <section id="message-us-section" class="message-us-section">
+            <h2>Message Us</h2>
+            <form id="message-form" class="message-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group-inline">
+                    <div class="form-group">
+                        <label for="birthdate">Date of birth</label>
+                        <input type="date" id="birthdate" name="birthdate" value="2023-04-02" required>
+                    </div>
+                    <div class="form-group gender-group">
+                        <label>Gender</label>
+                        <div class="radio-group">
+                            <input type="radio" id="male" name="gender" value="Laki-Laki" required>
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="Perempuan">
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+            <div id="result-box" class="result-box">
+                <h3>Data Pesan Anda</h3>
+                <p><strong>Submit-time:</strong> <span id="submit-time"></span></p>
+                <p><strong>Name:</strong> <span id="res-name"></span></p>
+                <p><strong>Date of Birth:</strong> <span id="res-birthdate"></span></p>
+                <p><strong>Gender:</strong> <span id="res-gender"></span></p>
+                <p><strong>Message:</strong> <span id="res-message"></span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>©️ 2025 Mochamad Rifqi Huzein. All Right Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
